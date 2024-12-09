@@ -32,14 +32,14 @@ connectDB();
 const app = express()
 app.use(
     cors({
-      origin: process.env.REMOTE_SERVER,
+      origin: process.env.NETLIFY_URL,
       method: ["GET", "POST", "DELETE", "PUT"],
       credentials: true,
     })
   );
 
 app.options('*', cors({
-    origin: process.env.REMOTE_SERVER,
+    origin: process.env.NETLIFY_URL,
     credentials: true,
 }));
 
