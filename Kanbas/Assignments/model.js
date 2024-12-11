@@ -1,3 +1,5 @@
+// src/Kanbas/Courses/Assignments/model.js
+
 import mongoose from "mongoose";
 import assignmentSchema from "./schema.js";
 

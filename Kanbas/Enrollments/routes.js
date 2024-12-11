@@ -34,6 +34,9 @@ export default function EnrollmentRoutes(app) {
     }
   });
 
+  
+
+
   app.get("/api/enrollments/:userId/courses", (req, res) => {
     const { userId } = req.params;
     try {
